@@ -1,12 +1,122 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B314EED2-31A8-48AB-8605-351AF7F8F193}|Tests.Unit\\Tests.Unit.csproj|c:\\users\\asus_corei7\\source\\repos\\proyectos\\licoreriasolution\\tests.unit\\productoservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B314EED2-31A8-48AB-8605-351AF7F8F193}|Tests.Unit\\Tests.Unit.csproj|solutionrelative:tests.unit\\productoservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|NewFolder1{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFD03147-52AC-402D-8B92-F582CE1A3F15}|Presentation.Api\\Presentation.Api.csproj|c:\\users\\asus_corei7\\source\\repos\\proyectos\\licoreriasolution\\presentation.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFD03147-52AC-402D-8B92-F582CE1A3F15}|Presentation.Api\\Presentation.Api.csproj|solutionrelative:presentation.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFD03147-52AC-402D-8B92-F582CE1A3F15}|Presentation.Api\\Presentation.Api.csproj|c:\\users\\asus_corei7\\source\\repos\\proyectos\\licoreriasolution\\presentation.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FFD03147-52AC-402D-8B92-F582CE1A3F15}|Presentation.Api\\Presentation.Api.csproj|solutionrelative:presentation.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\styles.css",
+              "RelativeDocumentMoniker": "styles.css",
+              "ToolTip": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\styles.css",
+              "RelativeToolTip": "styles.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-27T14:27:03.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductoServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\Tests.Unit\\ProductoServiceTests.cs",
+              "RelativeDocumentMoniker": "Tests.Unit\\ProductoServiceTests.cs",
+              "ToolTip": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\Tests.Unit\\ProductoServiceTests.cs",
+              "RelativeToolTip": "Tests.Unit\\ProductoServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T14:22:52.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "app.js",
+              "DocumentMoniker": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\app.js",
+              "RelativeDocumentMoniker": "app.js",
+              "ToolTip": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\app.js",
+              "RelativeToolTip": "app.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-27T14:19:54.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-27T14:19:11.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\Presentation.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\Presentation.Api\\Program.cs",
+              "RelativeToolTip": "Presentation.Api\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T14:12:14.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\Presentation.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Presentation.Api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\Presentation.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Presentation.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-27T14:08:59.238Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

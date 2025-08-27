@@ -1,15 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Domain", "Core.Domain\Core.Domain.csproj", "{5F45AD42-1B4A-4598-A4BA-42622B062878}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Application", "Core.Application\Core.Application.csproj", "{3FA2C2F0-12F7-4D1C-A57A-4F68A884C381}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Persistence", "Infrastructure.Persistence\Infrastructure.Persistence.csproj", "{F0A53E36-2233-42A0-A7D7-68F3AB3E8216}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure.Persistence\Infrastructure.csproj", "{F0A53E36-2233-42A0-A7D7-68F3AB3E8216}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation.Api", "Presentation.Api\Presentation.Api.csproj", "{FFD03147-52AC-402D-8B92-F582CE1A3F15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Unit", "Tests.Unit\Tests.Unit.csproj", "{B314EED2-31A8-48AB-8605-351AF7F8F193}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		app.js = app.js
+		index.html = index.html
+		styles.css = styles.css
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +42,10 @@ Global
 		{FFD03147-52AC-402D-8B92-F582CE1A3F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFD03147-52AC-402D-8B92-F582CE1A3F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFD03147-52AC-402D-8B92-F582CE1A3F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B314EED2-31A8-48AB-8605-351AF7F8F193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B314EED2-31A8-48AB-8605-351AF7F8F193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B314EED2-31A8-48AB-8605-351AF7F8F193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B314EED2-31A8-48AB-8605-351AF7F8F193}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
