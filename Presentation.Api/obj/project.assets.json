@@ -88,6 +88,43 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Core.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Core.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Core.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Application.dll": {}
+        }
+      },
+      "Core.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Core.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Domain.dll": {}
+        }
+      },
+      "Infrastructure.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Core.Application": "1.0.0",
+          "Core.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.Persistence.dll": {}
+        }
       }
     }
   },
@@ -439,10 +476,27 @@
         "swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Core.Application/1.0.0": {
+      "type": "project",
+      "path": "../Core.Application/Core.Application.csproj",
+      "msbuildProject": "../Core.Application/Core.Application.csproj"
+    },
+    "Core.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Core.Domain/Core.Domain.csproj",
+      "msbuildProject": "../Core.Domain/Core.Domain.csproj"
+    },
+    "Infrastructure.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure.Persistence/Infrastructure.Persistence.csproj",
+      "msbuildProject": "../Infrastructure.Persistence/Infrastructure.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Core.Application >= 1.0.0",
+      "Infrastructure.Persistence >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -477,7 +531,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\Core.Application\\Core.Application.csproj": {
+              "projectPath": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\Core.Application\\Core.Application.csproj"
+            },
+            "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj": {
+              "projectPath": "C:\\Users\\ASUS_COREI7\\source\\repos\\proyectos\\LicoreriaSolution\\Infrastructure.Persistence\\Infrastructure.Persistence.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
