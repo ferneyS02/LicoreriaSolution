@@ -17,7 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{02
 	ProjectSection(SolutionItems) = preProject
 		app.js = app.js
 		index.html = index.html
-		styles.css = styles.css
 	EndProjectSection
 EndProject
 Global
