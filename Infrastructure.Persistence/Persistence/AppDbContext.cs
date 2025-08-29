@@ -7,6 +7,7 @@ namespace LicoreriaSolution.Infrastructure.Persistence
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
+        // DbSets → Tablas
         public DbSet<Producto> Productos => Set<Producto>();
         public DbSet<Inventario> Inventarios => Set<Inventario>();
         public DbSet<Proveedor> Proveedores => Set<Proveedor>();
@@ -14,41 +15,65 @@ namespace LicoreriaSolution.Infrastructure.Persistence
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Producto>(e =>
+            // ====================
+            // Producto
+            // ====================
+            modelBuilder.Entity<Producto>(entity =>
             {
-                e.ToTable("Productos");
-                e.HasKey(x => x.Id);
-                e.Property(x => x.Nombre).IsRequired().HasMaxLength(200);
-                e.Property(x => x.Descripcion).HasMaxLength(500);
-                e.Property(x => x.Precio).HasColumnType("decimal(18,2)");
+                entity.ToTable("Productos");
+                entity.HasKey(p => p.Id);
+                entity.Property(p => p.Nombre)
+                      .IsRequired()
+                      .HasMaxLength(200); // PostgreSQL lo convierte en varchar(200)
+                entity.Property(p => p.Descripcion)
+                      .HasMaxLength(500);
+                entity.Property(p => p.Precio)
+                      .HasColumnType("numeric(18,2)"); // PostgreSQL usa numeric
             });
 
-            modelBuilder.Entity<Inventario>(e =>
+            // ====================
+            // Inventario
+            // ====================
+            modelBuilder.Entity<Inventario>(entity =>
             {
-                e.ToTable("Inventarios");
-                e.HasKey(x => x.Id);
-                e.Property(x => x.Cantidad).IsRequired();
-                e.Property(x => x.FechaActualizacion).IsRequired();
-                e.HasOne(x => x.Producto)
-                 .WithMany(p => p.Inventarios)
-                 .HasForeignKey(x => x.ProductoId)
-                 .OnDelete(DeleteBehavior.Cascade);
+                entity.ToTable("Inventarios");
+                entity.HasKey(i => i.Id);
+                entity.Property(i => i.Cantidad)
+                      .IsRequired();
+                entity.Property(i => i.FechaActualizacion)
+                      .HasColumnType("timestamp"); // PostgreSQL usa timestamp
+                entity.HasOne(i => i.Producto)
+                      .WithMany(p => p.Inventarios)
+                      .HasForeignKey(i => i.ProductoId)
+                      .OnDelete(DeleteBehavior.Cascade);
             });
 
-            modelBuilder.Entity<Proveedor>(e =>
+            // ====================
+            // Proveedor
+            // ====================
+            modelBuilder.Entity<Proveedor>(entity =>
             {
-                e.ToTable("Proveedores");
-                e.HasKey(x => x.Id);
-                e.Property(x => x.Nombre).IsRequired().HasMaxLength(200);
-                e.Property(x => x.Contacto).HasMaxLength(200);
+                entity.ToTable("Proveedores");
+                entity.HasKey(p => p.Id);
+                entity.Property(p => p.Nombre)
+                      .IsRequired()
+                      .HasMaxLength(200);
+                entity.Property(p => p.Contacto)
+                      .HasMaxLength(200);
             });
 
-            modelBuilder.Entity<Persona>(e =>
+            // ====================
+            // Persona
+            // ====================
+            modelBuilder.Entity<Persona>(entity =>
             {
-                e.ToTable("Personas");
-                e.HasKey(x => x.Id);
-                e.Property(x => x.Nombre).IsRequired().HasMaxLength(200);
-                e.Property(x => x.Rol).IsRequired();
+                entity.ToTable("Personas");
+                entity.HasKey(p => p.Id);
+                entity.Property(p => p.Nombre)
+                      .IsRequired()
+                      .HasMaxLength(200);
+                entity.Property(p => p.Rol)
+                      .IsRequired(); // PostgreSQL lo traduce como integer
             });
         }
     }

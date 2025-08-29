@@ -10,7 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 // DbContext
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 // Capa de aplicación (servicios)
 builder.Services.AddScoped<IProductoService, ProductoService>();
